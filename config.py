@@ -14,7 +14,7 @@ API_HASH = getenv("API_HASH")
 BOT_TOKEN = getenv("BOT_TOKEN",None) 
 
 # A name for your Music bot.
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Sofy")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "")
 
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
@@ -38,7 +38,7 @@ UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
     "https://github.com/aashuxxD/Nomore",
 )
-UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
+UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
@@ -82,10 +82,10 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://telegra.ph/file/e7ef690f27d84b0170924.jpg"
+    "START_IMG_URL", "https://telegra.ph/file/b9a3576bf07068a7c3b24.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://telegra.ph/file/e7ef690f27d84b0170924.jpg"
+    "PING_IMG_URL", "https://telegra.ph/file/b9a3576bf07068a7c3b24.jpg"
 )
 PLAYLIST_IMG_URL = "https://telegra.ph/file/7ecc2c5eb4db5a21039e6.jpg"
 STATS_IMG_URL = "https://telegra.ph/file/ea04a316367f3bfdb2ab8.jpg"
