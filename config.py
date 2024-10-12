@@ -14,7 +14,7 @@ API_HASH = getenv("API_HASH")
 BOT_TOKEN = getenv("BOT_TOKEN",None) 
 
 # A name for your Music bot.
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Sofy")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "ACE X MUSIC")
 
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
@@ -26,7 +26,7 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 300))
 LOGGER_ID = int(getenv("LOGGER_ID", None))
 
 # Get this value from @RoseBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", "5536304787"))
+OWNER_ID = int(getenv("OWNER_ID", "5111294407"))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -36,23 +36,23 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/aashuxxD/Nomore",
+    "https://github.com/Mrcutex1/ash",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Saykkunomusic")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/Saykkunomusic")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Ace_networkop")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+JoSPjg4d91QzMWNl")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
-AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
-
+AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", True))
+ASSISTANT_LEAVE_TIME = bool(getenv("ASSISTANT_LEAVE_TIME",  6500))
 
 # Get this credentials from https://developer.spotify.com/dashboard
-SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", None )
-SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None )
+SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "1c21247d714244ddbb09925dac565aed" )
+SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "709e1a2969664491b58200860623ef19" )
 
 
 # Maximum limit for fetching playlist's track from youtube, spotify, apple links.
@@ -81,22 +81,26 @@ autoclean = []
 confirmer = {}
 
 
-START_IMG_URL = getenv(
-    "START_IMG_URL", "https://telegra.ph/file/e7ef690f27d84b0170924.jpg"
-)
+START_IMG_URL = ["https://te.legra.ph/file/5fd13f2cc0d03bce9f7f2.jpg",
+                 "https://te.legra.ph/file/c15d01b3e6b40ea141dc9.jpg",
+                 "https://te.legra.ph/file/58b491b39cee854695fa9.jpg",
+                 "https://telegra.ph/file/17b5a312f5385556787e0.jpg",
+                 "https://telegra.ph/file/5c2c41d52e8819dcbb867.jpg",
+                 "https://telegra.ph/file/56de88c46f3b02a1722d1.jpg"]
+    
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://telegra.ph/file/e7ef690f27d84b0170924.jpg"
+    "PING_IMG_URL", "https://telegra.ph/file/87f680aead03443f291b0.jpg"
 )
-PLAYLIST_IMG_URL = "https://telegra.ph/file/7ecc2c5eb4db5a21039e6.jpg"
-STATS_IMG_URL = "https://telegra.ph/file/ea04a316367f3bfdb2ab8.jpg"
-TELEGRAM_AUDIO_URL = "https://telegra.ph/file/6258a0bf81db42bf57987.jpg"
-TELEGRAM_VIDEO_URL = "https://telegra.ph/file/6258a0bf81db42bf57987.jpg"
-STREAM_IMG_URL = "https://telegra.ph/file/ea04a316367f3bfdb2ab8.jpg"
-SOUNCLOUD_IMG_URL = "https://telegra.ph/file/ea04a316367f3bfdb2ab8.jpg"
-YOUTUBE_IMG_URL = "https://telegra.ph/file/a5f6f0d32b5b2488b1296.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://te.legra.ph/file/37d163a2f75e0d3b403d6.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://telegra.ph/file/ea04a316367f3bfdb2ab8.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://telegra.ph/file/ea04a316367f3bfdb2ab8.jpg"
+PLAYLIST_IMG_URL = "https://graph.org/file/c95a687e777b55be1c792.jpg"
+STATS_IMG_URL = "https://telegra.ph/file/edd388a42dd2c499fd868.jpg"
+TELEGRAM_AUDIO_URL = "https://telegra.ph/file/492a3bb2e880d19750b79.jpg"
+TELEGRAM_VIDEO_URL = "https://telegra.ph/file/492a3bb2e880d19750b79.jpg"
+STREAM_IMG_URL = "https://graph.org/file/ff2af8d4d10afa1baf49e.jpg"
+SOUNCLOUD_IMG_URL = "https://graph.org/file/c95a687e777b55be1c792.jpg"
+YOUTUBE_IMG_URL = "https://graph.org/file/e8730fdece86a1166f608.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://graph.org/file/0bb6f36796d496b4254ff.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://graph.org/file/0bb6f36796d496b4254ff.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://graph.org/file/0bb6f36796d496b4254ff.jpg"
 
 
 def time_to_seconds(time):
